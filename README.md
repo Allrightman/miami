@@ -5,8 +5,9 @@ Fully responsive landing page with attention to the details of the layout
 - Laptop 1280px
 - Large screens 1920px
 
->-[Link to the web page](https://Allrightman.github.io/miami/)
->-[Link to the Figma design](https://www.figma.com/file/nHz8bflIwJaWP3P99vKTH5/miami_home_new?node-id=16033%3A3)
+>[Link to the web page](https://Allrightman.github.io/miami/)
+
+>[Link to the Figma design](https://www.figma.com/file/nHz8bflIwJaWP3P99vKTH5/miami_home_new?node-id=16033%3A3)
 ## Tech stack:
 - HTML5
 - BEM
