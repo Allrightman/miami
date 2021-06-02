@@ -1,6 +1,7 @@
 @import "./normalize.scss";
 @import "./variables.scss";
 
+@import "./blocks/page.scss";
 @import "./blocks/header.scss";
 @import "./blocks/nav.scss";
 @import "./blocks/main.scss";
@@ -11,8 +12,3 @@
 @import "./blocks/testimonials.scss";
 @import "./blocks/contacts.scss";
 @import "./blocks/footer.scss";
-
-.header__toggler:checked ~ .nav {
-  transform: translateX(0%);
-  opacity: 1;
-}

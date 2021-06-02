@@ -67,10 +67,6 @@ $contact-paddings: 8px;
   &__address-wrapper {
     max-width: 413px;
     margin: 0 auto;
-
-    // @media (min-width: 1024px) {
-    //   margin-right: 50px;
-    // }
   }
 
   &__address {
@@ -163,9 +159,10 @@ $contact-paddings: 8px;
     color: #fff;
     background-color: $color-blue;
     box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
+    cursor: pointer;
 
     &:hover {
-      width: 100%;
+      width: 99%;
       outline: 0;
     }
 

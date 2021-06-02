@@ -36,14 +36,11 @@
     padding: 24.9px 5px 0;
     margin: 0 -5px;
 
+    transition-delay: 0.8s;
+
     @media (min-width: 900px) {
       padding-top: 25.5px;
     }
-  }
-
-  &__toggler:checked + &__content-wrapper &__icons {
-    background-color: $color-blue;
-    transition-delay: 0.8s;
   }
 
   &__menu-icon {
@@ -59,6 +56,8 @@
     background-repeat: no-repeat;
     background-position: center;
 
+    cursor: pointer;
+
     transition: width 0.3s linear,
       height 0.3s linear,
       background-image 0.1s linear;
@@ -68,21 +67,29 @@
       height: 16px;
       background-image: url("../images/icons/big-burger-menu.svg");
     }
-  }
 
-  &__menu-icon:hover {
-    background-image: url("../images/icons/small-burger-menu-hover.svg");
+    &:hover {
+      background-image: url("../images/icons/small-burger-menu-hover.svg");
 
-    @media (min-width: 900px) {
-      background-image: url("../images/icons/big-burger-menu-hover.svg");
+      @media (min-width: 900px) {
+        background-image: url("../images/icons/big-burger-menu-hover.svg");
+      }
     }
-  }
 
-  &__toggler:checked + &__content-wrapper &__menu-icon {
-    background-image: url("../images/icons/small-close.svg");
+    &--active {
+      background-image: url("../images/icons/small-close.svg");
 
-    @media (min-width: 900px) {
-      background-image: url("../images/icons/big-close.svg");
+      @media (min-width: 900px) {
+        background-image: url("../images/icons/big-close.svg");
+      }
+
+      &:hover {
+        background-image: url("../images/icons/small-close.svg");
+
+        @media (min-width: 900px) {
+          background-image: url("../images/icons/big-close.svg");
+        }
+      }
     }
   }
 
@@ -97,7 +104,6 @@
     height: 45.46px;
 
     transition: width 0.2s linear, height 0.2s linear;
-    cursor: default;
 
     @media (min-width: 900px) {
       width: 130.35px;
@@ -115,7 +121,6 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    cursor: default;
 
     transition: width 0.2s linear, height 0.2s linear;
 

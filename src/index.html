@@ -13,10 +13,9 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet">
-    <script type="text/javascript" src="scripts/main.js"></script>
   </head>
 
-  <body>
+  <body class="page">
     <header class="header">
       <input
         class="header__toggler"
@@ -26,11 +25,17 @@
 
       <div class="header__content-wrapper">
         <div class="header__icons">
-          <label class="header__menu-icon" for="header-toggler"></label>
+          <label
+            class="header__menu-icon"
+            for="header-toggler">
+          </label>
 
           <a class="header__logo-link" href="index.html">
-            <img class="header__logo" src="./images/icons/small-logo.svg"
-              alt="logo-miami">
+            <img
+              class="header__logo"
+              src="./images/icons/small-logo.svg"
+              alt="logo-miami"
+            >
           </a>
 
           <a class="header__phone-icon" href="tel:+1 234 555-55-55"></a>
@@ -55,9 +60,6 @@
             </li>
             <li class="nav__item">
               <a href="#gallery" class="nav__link">GALLERY</a>
-            </li>
-            <li class="nav__item">
-              <a href="#consultation" class="nav__link">CONSULTATION</a>
             </li>
             <li class="nav__item">
               <a href="#testimonials" class="nav__link">TESTIMONIALS</a>
@@ -88,7 +90,7 @@
             Miami best
             <br>
             Real estate
-            <a class="about__title-link" href="index.html">
+            <a class="about__title-link" href="https://goo.gl/maps/Wwy2kqFHUunofiLQA">
               here
             </a>
           </h2>
@@ -358,6 +360,7 @@
             </address>
 
             <form
+              onsubmit="setTimeout(function () { window.location.reload(); }, 10)"
               class="contacts__form"
               action="#"
               method="POST"
@@ -390,7 +393,7 @@
                 type="submit"
                 title="Send to consult"
               >
-                Consultation
+                Send a message
               </button>
             </form>
           </article>
@@ -407,5 +410,7 @@
         >
       </a>
     </footer>
+
+    <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

@@ -12,7 +12,12 @@
   background-color: $color-blue;
 
   opacity: 0;
-  transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+  transition: transform 0.3s ease-out, opacity 0.3s linear;
+
+  &--active {
+    transform: translateX(0);
+    opacity: 1;
+  }
 
   &__content {
     max-width: 1020px;
@@ -46,7 +51,6 @@
     text-decoration: none;
 
     transition: border 0.2s linear;
-    cursor: default;
   }
 
   &__link:hover {
@@ -75,6 +79,5 @@
     color: #fff;
     border-bottom: 1px solid #fff;
     text-decoration: none;
-    cursor: default;
   }
 }
