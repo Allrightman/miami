@@ -33,6 +33,12 @@
     height: 153px;
     margin-bottom: 28px;
     border-radius: 50%;
+
+    transition: transform 0.2s linear;
+
+    &:hover {
+      transform: scale(1.15);
+    }
   }
 
   &__title {
